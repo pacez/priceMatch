@@ -12,21 +12,27 @@ if(typeof $ORDER_CONFIG !== "undefined"){
 			// 获取用户第一页订单的商品信息
 			var me=this;
 			$.ajax({
-				url: '//order.jd.com/lazy/getOrderProductInfo.action',
+				url: '//XXX.XXX.XXX/lazy/getOrderProductInfo.action',
 				data: me.config,
 				success: function(data){
 					cb && cb(data);
 				}
 			});
 		},
-		filter: function(){
+		filter: function(orderInfo){
 			// 过滤30天内的订单
 		},
-		getPayPrice: function(){
+		getPayPrice: function(orderIds){
 			// 获取实际支付价格
 		},
-		getJdPrice: function(){
+		getJdPrice: function(productIds){
 			// 获取JD实时价格
+		},
+		comparePrice: function(payPrice,JdPrice){
+			// 比价
+		},
+		getResultList: function(){
+			// 获取满足价保条件的商品列表
 		}
 	}
 
