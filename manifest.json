@@ -2,7 +2,7 @@
   "name": "Price Match",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "反感JD价格保护需要自己时刻关注，并手动申请。所以有了这个自动化申请JD价格保护的chrome插件",
+  "description": "当满足某电商价格保护时，自动通知提醒",
   "icons": {
     "16": "images/icon.png",
     "48": "images/icon.png",
