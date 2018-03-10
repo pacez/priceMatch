@@ -8,7 +8,7 @@
 			var me=this;
 			console.log('priceMatch start....');
 			$.ajax({
-				url: 'xxx',
+				url: 'xxxx',
 				dataType: 'jsonp',
 				data: {
 					sceneval:2,
@@ -86,7 +86,7 @@
 			// 获取实际支付价格
 		},
 		getJdPrice: function(productIds){
-			// 获取JD实时价格
+			// 获取实时价格
 		},
 		comparePrice: function(payPrice,JdPrice){
 			// 比价
