@@ -1,9 +1,7 @@
 // 1.同步获取脚本内容
 var readFileSync = function(filename, callback) {
-    // read script sync
     var xhr = new XMLHttpRequest();
     var scriptUrl = chrome.extension.getURL(filename);
-    //!!! disable async
     xhr.open("GET", scriptUrl);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
